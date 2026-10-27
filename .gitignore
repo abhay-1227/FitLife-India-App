@@ -20,7 +20,6 @@ bin/
 gen/
 out/
 .aistudio/
-/public/
 
 # Local configuration files (contains local paths/SDK paths)
 local.properties
