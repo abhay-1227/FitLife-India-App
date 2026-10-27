@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    CSE3142 Syllabus Implementation (Lectures 5-8, 11-12)
+    Demonstrates:
+    - View and ViewGroups (LinearLayout, RelativeLayout)
+    - Common UI Widgets: TextView, EditText, Button, ImageView
+    - Input handling and Event Listener hooks
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_syllabus_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1E1E1E">
+
+    <!-- RelativeLayout Header (Lecture 8: Relative Layout) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_syllabus_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="CSE3142 Academic Scope Card"
+            android:textColor="#FF9F43"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_syllabus_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="XML + Views"
+            android:textColor="#4A90E2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- TextView for description (Lecture 7: Common UI Widgets) -->
+    <TextView
+        android:id="@+id/tv_syllabus_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rendered from native Android XML layout using ViewGroups (LinearLayout, RelativeLayout) and interactive View widgets."
+        android:textColor="#E0E0E0"
+        android:textSize="12sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- EditText for input testing (Lecture 7, 11: EditText, Input Validation) -->
+    <EditText
+        android:id="@+id/et_academic_quick_note"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Type daily health log / note..."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:textSize="13sp"
+        android:background="#2C2C2C"
+        android:paddingHorizontal="12dp"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Button for event listener (Lecture 7, 12: Button, Event Listeners) -->
+    <Button
+        android:id="@+id/btn_academic_save_note"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Submit Note (Event Listener)"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF9F43"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

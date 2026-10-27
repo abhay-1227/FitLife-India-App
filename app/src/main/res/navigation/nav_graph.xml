@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.ui.fragments.HomeFragment"
+        android:label="Home"
+        tools:context="com.example.ui.fragments.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_nutrition"
+            app:destination="@+id/nutrition" />
+        <action
+            android:id="@+id/action_home_to_yoga"
+            app:destination="@+id/yoga" />
+        <action
+            android:id="@+id/action_home_to_terms"
+            app:destination="@+id/terms" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nutrition"
+        android:name="com.example.ui.fragments.NutritionFragment"
+        android:label="Nutrition"
+        tools:context="com.example.ui.fragments.NutritionFragment"
+        tools:layout="@layout/fragment_nutrition" />
+
+    <fragment
+        android:id="@+id/yoga"
+        android:name="com.example.ui.fragments.YogaFragment"
+        android:label="Yoga"
+        tools:context="com.example.ui.fragments.YogaFragment"
+        tools:layout="@layout/fragment_yoga" />
+
+    <fragment
+        android:id="@+id/tools"
+        android:name="com.example.ui.fragments.ToolsFragment"
+        android:label="Tools"
+        tools:context="com.example.ui.fragments.ToolsFragment"
+        tools:layout="@layout/fragment_tools">
+        <action
+            android:id="@+id/action_tools_to_home"
+            app:destination="@+id/home" />
+        <action
+            android:id="@+id/action_tools_to_nutrition"
+            app:destination="@+id/nutrition" />
+        <action
+            android:id="@+id/action_tools_to_yoga"
+            app:destination="@+id/yoga" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.ui.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:context="com.example.ui.fragments.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_terms"
+            app:destination="@+id/terms" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/terms"
+        android:name="com.example.ui.fragments.TermsFragment"
+        android:label="Terms"
+        tools:context="com.example.ui.fragments.TermsFragment"
+        tools:layout="@layout/fragment_terms" />
+
+</navigation>

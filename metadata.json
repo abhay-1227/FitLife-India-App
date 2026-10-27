@@ -1,0 +1,12 @@
+{
+  "name": "FitLife India",
+  "description": "Authentic Indian wellness, Apple Fitness style activity rings, nutrition tracking, yoga, and spatial glassmorphic wellness tools.",
+  "requestFramePermissions": [
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACTIVITY_RECOGNITION"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
